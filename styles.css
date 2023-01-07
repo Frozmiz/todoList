@@ -43,7 +43,7 @@ input {
 .li-container {
   background-color: white;
   width: 100%;
-  color: darkslategray;
+  color: rgb(3, 47, 47);
   margin-top: 20px;
 }
 
@@ -52,16 +52,18 @@ ul {
 }
 
 li {
+  align-content: center;
   list-style: none;
   background-color: lightgray;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-top: 15px;
   display: flex;
+  justify-content: center;
 }
 
 li p {
   margin: 0;
-  padding: 15px;
+  padding: 20px;
   width: 100%;
 }
 
