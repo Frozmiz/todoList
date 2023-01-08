@@ -18,7 +18,8 @@ function init() {
     
 }
 
-// FUNCION ANADIR > Si el cajetín de texto está vacio la función añadir no se ejecuta gracias a preventDefault();
+// FUNCION ANADIR > 
+
 
 function add(evento){
 
@@ -30,7 +31,7 @@ function add(evento){
         const lista = document.createElement("li");
         //lista es el elemento padre
         lista.innerHTML = nuevoItem.value;
-        lista.addEventListener("click", eliminarLi);
+        // lista.addEventListener("dblclick", eliminarLi);
         listaCompra.appendChild(lista);
         //Agregamos el botón por cada LI que se crea.
         lista.appendChild(addDeleteButton());
@@ -56,7 +57,7 @@ function addDeleteButton() {
         // creamos variable item y asignamos el elemento padre del evento.
         const item = e.target.parentElement;
         //Eliminamos desde el elemento padre el elemento hijo
-        ul.removeChild(item);
+        listaCompra.removeChild(item);
 
         const items = document.querySelectorAll("li")
 
@@ -70,8 +71,8 @@ function addDeleteButton() {
 
 // FUNCION ELIMINAR LI > Debemos llamar al elemento padre y desde este eliminar al hijo.
 
-function eliminarLi() {
-    this.parentNode.removeChild(this);
-    console.log("Elimina elemento");
-}
+// function eliminarLi() {
+//     this.parentNode.removeChild(this);
+//     console.log("Elimina elemento");
+// }
 
