@@ -61,6 +61,7 @@ function addDeleteButton() {
 
         const items = document.querySelectorAll("li")
 
+        // Si el array de LIs está vacio entonces imprime el párrafo en bloque (o inline si quieres.)
         if (items.length === 0) {
             empty.style.display = "block";
         }
