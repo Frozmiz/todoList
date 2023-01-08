@@ -53,9 +53,9 @@ function addDeleteButton() {
 
     deleteButton.className = "btn-delete";
 
-    deleteButton.addEventListener("click", (e) => {
+    deleteButton.addEventListener("click", (event) => {
         // creamos variable item y asignamos el elemento padre del evento.
-        const item = e.target.parentElement;
+        const item = event.target.parentElement;
         //Eliminamos desde el elemento padre el elemento hijo
         listaCompra.removeChild(item);
 
